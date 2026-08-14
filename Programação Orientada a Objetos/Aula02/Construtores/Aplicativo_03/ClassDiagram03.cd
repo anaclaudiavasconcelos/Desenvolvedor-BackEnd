@@ -3,7 +3,7 @@
   <Class Name="Aplicativo_03.Aluno">
     <Position X="5.5" Y="2.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAJgAAAABBAAAAAAAgAEAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAJgAAAABBAAIAAAAgAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Aluno.cs</FileName>
     </TypeIdentifier>
   </Class>

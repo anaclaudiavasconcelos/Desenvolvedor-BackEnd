@@ -7,7 +7,7 @@ namespace Aplicativo_03
         public double nota1;
         public double nota2;
         public double nota3;
-
+        private double pontuacaominina = 60;
         public Aluno(string nomedoaluno, double nota1, double nota2, double nota3)
         {
             this.nomedoaluno = nomedoaluno;
@@ -23,12 +23,12 @@ namespace Aplicativo_03
 
         public bool AprovadoOuReprovado()
         {
-            return
+            return NotaFinal() >= pontuacaominina;
         }
 
         public double Ponto()
         {
-            throw new System.NotImplementedException();
+            return pontuacaominina - NotaFinal();
         }
     }
 }
