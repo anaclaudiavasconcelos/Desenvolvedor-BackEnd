@@ -1,0 +1,62 @@
+using static System.Console;
+/*
+//Saída de dados
+//ForegroundColor = ConsoleColor.White;
+BackgroundColor = ConsoleColor.Magenta; //muda a cor de fundo do console
+double numero = 1.73598597;
+WriteLine($"Salario = {numero:n}"); // interpolação de string , coloca duas casas decimais
+WriteLine("Hello," + " World!");
+*/
+Write("SENAI");// SAIDA DE DADOS
+Beep();//
+WriteLine("\t\t\t Clodoaldo");
+WriteLine("\ECAMPEAO \n Clodoaldo");
+Title = "Aplicativo SENAI";
+string escola = "Americana"; 
+WriteLine($"SENAI: {escola}"); // interpolação de string
+ForegroundColor = ConsoleColor.Red;
+WriteLine("MESSI");
+ForegroundColor = ConsoleColor.Blue;
+WriteLine("MESSI");
+ResetColor
+ReadKey();
+
+
+//Processamento de dados
+//Operadores aritméticos
+
+int a = 1 + 1; //operador de soma
+int b = 2- 1; //operador de subtração
+int c = 3 * 1;//operador de multiplicação    
+double d = 4 / 1;//operador de divisão
+double e = 2 * 2*2;//potência
+double f = Math.Sqrt(4);//Raiz quadrada
+Math.Pow(2, 3); //potência
+double k = 1 + (1 - (2 * 3)) / 4; //ordem de precedência
+double j = 2 % 2; //Módulo ou resto da divisão
+int y = 0;
+Console.WriteLine(y);
+y++;// incremento em um
+Console.WriteLine(y);
+y--;// decremento em um
+Console.WriteLine(y);
+y += 2;//Soma e atribuição
+y -=2;//Subtração e atribuição
+y *=2;//Multiplicação e atribuição
+y /= 2;//Divisão e atribuição
+y %= 2;//Módulo e atribuição
+Console.WriteLine(y);
+
+
+// Entrada de dados
+
+Console.Write("Digite seu nome: ");// Mensagem para o usuário
+string nome = Console.ReadLine();// Entrada de dados, pede para o usuário digitar alguma coisa.
+
+Console.Write("Digite sua idade: ");// Mensagem para o usuário
+int idade = int.Parse(Console.ReadLine());//Faz conversão de dados,de string para inteiro.
+
+Console.Write("Digite seu salário: ");// Mensagem para o usuário
+double salario = double.Parse(Console.ReadLine());//Faz conversão de dados,de string para double.
+Console.WriteLine($"Nome: {nome}, Idade: {idade+1}, Salario = R${salario}");//Exibe o nome e a idade do usuário.
+

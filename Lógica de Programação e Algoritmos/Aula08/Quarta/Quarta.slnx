@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="ColecaoDeDados/ColecaoDeDados.csproj" />
+  <Project Path="Lanchonete/Lanchonete.csproj" Id="b27dbfc0-f930-43b4-8988-b03169687751" />
+  <Project Path="Lanchonete1/Lanchonete1.csproj" />
+  <Project Path="Mais_Velho/Mais_Velho.csproj" />
+  <Project Path="Negativos/Negativos.csproj" />
+  <Project Path="Soma_Vetor/Soma_Vetor.csproj" />
+</Solution>
