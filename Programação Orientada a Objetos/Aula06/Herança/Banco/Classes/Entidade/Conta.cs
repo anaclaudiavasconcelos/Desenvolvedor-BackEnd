@@ -47,7 +47,7 @@ namespace Banco.Classes.Entidade
 
         public virtual void Saque(double quantia)//virtual habilita fazer a subscrita do método na subclasse.
         {
-            SaldoDaConta -= quantia;
+            SaldoDaConta -= quantia + 5.00;
         }
 
         public void Deposito(double quantia)

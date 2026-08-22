@@ -1,6 +1,7 @@
 ﻿
 using System.Runtime.InteropServices;
     bool sair = true;
+
 while (sair != false)
 {
 
@@ -39,8 +40,10 @@ void Opcao1()
     else
     {
         Console.WriteLine("Qual o valor do depósito inicial? ");
+        
     }
 
+   
 }
 
 
