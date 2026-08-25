@@ -1,7 +1,7 @@
 ﻿
-namespace Banco.Classes.Entidade
+namespace Banco.Classes
 {
-    internal class ContaPoupanca : Conta //sealed - selado, quando coloca na classe faz que não seja permitido a herança da classe ContaPoupança.
+    internal sealed class ContaPoupanca : Conta //ContaPoupança é uma classe selada, isso impede que ela seja herdada.
     {
         //Campos
         private double taxa;
@@ -14,30 +14,37 @@ namespace Banco.Classes.Entidade
             set { taxa = value; }
         }
 
-        //Construtores
-        public ContaPoupanca(int numeroDaConta, string titularDaConta, double taxa) : base(numeroDaConta, titularDaConta)//base - Chamada da implementação do membro da superclasse na subclasse.
+        //Construtor
+        public ContaPoupanca(string titularDaConta, int numeroDaConta, double taxa) : base(titularDaConta, numeroDaConta)
         {
             TaxaDeJuros = taxa;
         }
 
-        public ContaPoupanca(int numeroDaConta, string titularDaConta, double saldoDaConta, double taxa) : base(numeroDaConta, titularDaConta, saldoDaConta)
+        public ContaPoupanca(string titularDaConta, int numeroDaConta, double saldoDaConta, double taxa) : base(titularDaConta, numeroDaConta, saldoDaConta)
         {
             TaxaDeJuros = taxa;
         }
 
-        //Métodos
+        //Método
 
-        
         public override void Saque(double quantia)
         {
             SaldoDaConta -= quantia + (quantia * TaxaDeJuros);
+
         }
 
-        public void AtualizacaoDeSaldo(double quantia) 
-            {
-
+        public void AtualizacaoDeSaldo(double quantia)
+        {
             Console.WriteLine($"Saldo atualizado: {SaldoDaConta:c}");
-           }
+        }
+
+        public override string ToString()
+        {
+            return $"Dados da conta:\n" +
+                $"\tNúmero da conta: {NumeroDaConta}\n" +
+                $"\tTitular:{TitularDaConta}\n" +
+                $"\tSaldo: {SaldoDaConta:c}\n";
+
         }
     }
-
+}

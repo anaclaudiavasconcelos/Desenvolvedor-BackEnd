@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Aluguel.Classes.Entidades.AluguelCarro" Collapsed="true">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAgAAAAAAAACgAgAAAAAAIAAA=</HashCode>
+      <FileName>Classes\Entidades\AluguelCarro.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aluguel.Interfaces.Servicos.ServAluguel" Collapsed="true">
+    <Position X="12" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAIAAAAEAAQEAAAAAAIQAAAQIAAAABAAIAA=</HashCode>
+      <FileName>Interfaces\Servicos\ServAluguel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aluguel.Interfaces.Servicos.TaxaServBrasil" Collapsed="true">
+    <Position X="14.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\Servicos\TaxaServBrasil.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Aluguel.Interfaces.ITaxaServ" Collapsed="true">
+    <Position X="9" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ITaxaServ.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

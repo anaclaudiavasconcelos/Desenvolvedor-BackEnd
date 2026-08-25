@@ -1,24 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Banco.Classes.Entidade.Conta" Collapsed="true">
-    <Position X="10.5" Y="0.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AACACAAACAEAAAAAAAAAAAAAAAAAAAAEAAEAAAAGAAA=</HashCode>
-      <FileName>Classes\Entidade\Conta.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Banco.Classes.Entidade.ContaEmpresa" Collapsed="true">
+  <Class Name="Banco.Classes.ContaEmpresa" Collapsed="true">
     <Position X="12.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAABAAAAAEAAAAAAAAAAEAAAAACAAAAAAAAAA=</HashCode>
       <FileName>Classes\Entidade\ContaEmpresa.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Banco.Classes.Entidade.ContaPoupanca">
+  <Class Name="Banco.Classes.ContaPoupanca">
     <Position X="7.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAIAAAIAAAAAAAABAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAEAAAAEAAAAAAAAIAAAIAAAAAAAABAAAAA=</HashCode>
       <FileName>Classes\Entidade\ContaPoupanca.cs</FileName>
     </TypeIdentifier>
   </Class>

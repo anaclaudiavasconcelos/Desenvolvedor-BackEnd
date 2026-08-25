@@ -1,18 +1,21 @@
 ﻿
-using Banco.Interface;
-using System.Runtime.InteropServices.Marshalling;
-
-namespace Banco.Classes.Entidade
+namespace Banco.Classes
 {
     internal class Conta : IOperacoes
     {
-		//Campos
-		private int numero;
-		private string titular;
-		private double saldo;
+        //Campos
+        private int numero;
+        private string titular;
+        private double saldo;
 
-       
+
+
         //Propriedades
+        protected double SaldoDaConta
+        {
+            get { return saldo; } //get é responsável por retornar o valor do campo saldo
+            set { saldo = value; } //set é responsável por receber o valor e atribuir no campo saldo
+        }
 
         protected int NumeroDaConta
         {
@@ -21,31 +24,27 @@ namespace Banco.Classes.Entidade
         }
 
         protected string TitularDaConta
-		{
-			get { return titular; }
-			set { titular = value; }
-		}
-        
-        protected double SaldoDaConta
         {
-            get { return saldo; }
-            set { saldo = value; }
+            get { return titular; }
+            set { titular = value; }
         }
 
+
         //Construtor
-        public Conta(int numeroDaConta, string titularDaConta) //Construtor com menos argumento.
+        public Conta(string titularDaConta, int numeroDaConta)
         {
-            NumeroDaConta = numeroDaConta;
             TitularDaConta = titularDaConta;
+            NumeroDaConta = numeroDaConta;
             SaldoDaConta = 0;
         }
 
-        public Conta(int numeroDaConta, string titularDaConta, double saldoDaConta) : this(numeroDaConta, titularDaConta)//ele reaproveitou o outro construtor com menos argumento, é uma herança.
+        public Conta(string titularDaConta, int numeroDaConta, double saldoDaConta) : this(titularDaConta, numeroDaConta)
         {
             SaldoDaConta = saldoDaConta;
         }
 
-        public virtual void Saque(double quantia)//virtual habilita fazer a subscrita do método na subclasse.
+        //Método
+        public virtual void Saque(double quantia)
         {
             SaldoDaConta -= quantia + 5.00;
         }
@@ -54,6 +53,17 @@ namespace Banco.Classes.Entidade
         {
             SaldoDaConta += quantia;
         }
-       
+
+        public override string ToString()
+        {
+            return $"Dados da conta:\n" +
+                $"\tNúmero da conta: {NumeroDaConta}\n" +
+                $"\tTitular:{TitularDaConta}\n" +
+                $"\tSaldo: {SaldoDaConta:c}\n";
+        }
+
+
     }
 }
+Conta.txt
+Exibindo Conta.txt.
