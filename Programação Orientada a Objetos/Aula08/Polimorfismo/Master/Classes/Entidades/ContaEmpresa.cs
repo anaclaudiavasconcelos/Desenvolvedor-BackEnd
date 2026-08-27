@@ -1,14 +1,12 @@
-﻿
-namespace Banco.Classes.Entidades
+﻿namespace Master.Classes.Entidades
 {
     internal class ContaEmpresa : Conta
     {
-        //Campo
+        //Campos
         private double limite;
 
-
         //Propriedade
-        public double LimiteDeEmprestimo
+        public double LimiteEmprestimo
         {
             get { return limite; }
             set { limite = value; }
@@ -17,30 +15,25 @@ namespace Banco.Classes.Entidades
         //Construtor
         public ContaEmpresa(string titularDaConta, int numeroDaConta, double limite) : base(titularDaConta, numeroDaConta)
         {
-            LimiteDeEmprestimo = limite;
+            LimiteEmprestimo = limite;
         }
 
         public ContaEmpresa(string titularDaConta, int numeroDaConta, double saldoDaConta, double limite) : base(titularDaConta, numeroDaConta, saldoDaConta)
         {
-            LimiteDeEmprestimo = limite;
+            LimiteEmprestimo = limite;
         }
 
-        //Método
-        public override string ToString()
+        //Métodos
+        public void Emprestimo(double qtd)
         {
-            return $"Dados da conta: \n" +
-                   $"\tTitular:{TitularDaConta}\n" +
-                   $"\tNúmero: {NumeroDaConta}\n" +
-                   $"\tSaldo: {SaldoDaConta:c}\n";
-
+            LimiteEmprestimo -= qtd;
+            SaldoDaConta += qtd;
         }
 
-        public void Emprestimo(double quantia)
+        public override void ExibirDados()
         {
-            LimiteDeEmprestimo -= quantia;
-            SaldoDaConta += quantia;
+            base.ExibirDados();
+            Console.WriteLine($"Limite para emprestimo: {LimiteEmprestimo:c}");
         }
-
-
     }
 }
