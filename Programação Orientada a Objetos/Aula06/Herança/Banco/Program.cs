@@ -1,7 +1,7 @@
 ﻿
-using Banco.Classes.Entidades;
-{
-    bool sair = true;
+using Banco.Classes.Entidade;
+
+bool sair = true;
 double saldo, quantia;
 int numero;
 string nome;

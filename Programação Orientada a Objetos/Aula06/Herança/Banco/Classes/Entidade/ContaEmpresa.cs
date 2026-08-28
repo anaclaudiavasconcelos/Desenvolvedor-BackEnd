@@ -1,5 +1,7 @@
-﻿
-namespace Banco.Classes.Entidades
+﻿using Banco.Classes.Entidade;
+
+
+namespace Banco.Classes.Entidade
 {
     internal class ContaEmpresa : Conta
     {

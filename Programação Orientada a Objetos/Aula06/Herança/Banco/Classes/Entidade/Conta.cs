@@ -1,5 +1,6 @@
-﻿
-namespace Banco.Classes
+﻿using Banco.Interface;
+
+namespace Banco.Classes.Entidade
 {
     internal class Conta : IOperacoes
     {
@@ -65,5 +66,4 @@ namespace Banco.Classes
 
     }
 }
-Conta.txt
-Exibindo Conta.txt.
+

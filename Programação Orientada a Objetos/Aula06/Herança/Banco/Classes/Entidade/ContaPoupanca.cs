@@ -1,5 +1,5 @@
 ﻿
-namespace Banco.Classes.Entidades
+namespace Banco.Classes.Entidade
 {
     internal sealed class ContaPoupanca : Conta //ContaPoupança é uma classe selada, isso impede que ela seja herdada.
     {
