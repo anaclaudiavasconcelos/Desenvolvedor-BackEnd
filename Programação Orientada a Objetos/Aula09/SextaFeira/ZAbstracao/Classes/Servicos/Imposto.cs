@@ -6,27 +6,28 @@ namespace ZAbstracao.Classes.Servicos
 {
     internal class Imposto : IAssinatura
     {
-        public double CalPessoaFisica(double renda)
+        public double CalcularImposto(PessoaFisica pessoafisica)
         {
-            if (renda < 20000.00)
+            if (pessoafisica.RendaAnual < 20000)
             {
-                return renda * 0.15;
+                return (pessoafisica.RendaAnual * 0.15) - (pessoafisica.GastoSaude * 0.50);
             }
             else
             {
-                return renda * 0.25;
+                return (pessoafisica.RendaAnual * 0.25) - (pessoafisica.GastoSaude * 0.50);
             }
-           
         }
 
-        public double CalPessoaJuridica(int funcionario)
+        public double CalcularImposto(PessoaJuridica pessoajuridica)
         {
-            if (funcionario)
+            if (pessoajuridica.NumeroDeFuncionario <= 10)
             {
-                
+                return pessoajuridica.RendaAnual * 0.16;
             }
-
-
+            else
+            {
+                return pessoajuridica.RendaAnual * 0.14;
+            }
         }
     }
 }

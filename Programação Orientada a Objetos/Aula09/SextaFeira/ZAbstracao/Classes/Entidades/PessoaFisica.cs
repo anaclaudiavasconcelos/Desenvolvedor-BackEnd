@@ -20,9 +20,6 @@ namespace ZAbstracao.Classes.Entidades
         //Construtor
         public PessoaFisica(string nome, double rendaAnual, Contribuinte contribuinte, double gastos) : base(nome, rendaAnual, contribuinte)
         {
-            Nome = nome;
-            RendaAnual = rendaAnual;
-            Contribuinte
             GastoSaude = gastos;
 
         }

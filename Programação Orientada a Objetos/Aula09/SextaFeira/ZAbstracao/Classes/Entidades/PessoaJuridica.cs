@@ -1,24 +1,26 @@
 ﻿
 
+using ZAbstracao.Enumeracao;
+
 namespace ZAbstracao.Classes.Entidades
 {
     internal class PessoaJuridica : Pessoa
     {
 		//Campos
-		private int funcionario;
+		private int numerofuncionario;
 
        
         //Propriedades
         public int NumeroDeFuncionario
 		{
-			get { return funcionario; }
-			set { funcionario = value; }
+			get { return numerofuncionario; }
+			set { numerofuncionario = value; }
 
 		}
         //Construtor
-        public PessoaJuridica(int numeroDeFuncionario)
+        public PessoaJuridica(string nome, double rendaAnual, Contribuinte contribuinte, int numerofuncionario) : base(nome, rendaAnual, contribuinte)
         {
-            NumeroDeFuncionario = numeroDeFuncionario;
+            NumeroDeFuncionario = numerofuncionario;
         }
     }
 }

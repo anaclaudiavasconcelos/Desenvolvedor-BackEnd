@@ -5,7 +5,7 @@ using ZAbstracao.Interfaces;
 
 namespace ZAbstracao.Classes.Entidades
 {
-    abstract internal class Pessoa : IAssinatura
+    abstract internal class Pessoa 
     {
         //Campo
         Contribuinte contribuinte;
@@ -37,13 +37,6 @@ namespace ZAbstracao.Classes.Entidades
 
         }
 
-       
-        //Método
-
-        public abstract void CalPessoaFisica();
-
-
-        public abstract void CalPessoaJuridica();
-        
+               
     }
 }
