@@ -102,7 +102,7 @@ void ConsultaConta(ContaContext conta)
         {
             case 1:
                 //Operacão Depósito
-                Console.Write("Digite o valorpara depósito");
+                Console.Write("Digite o valor para depósito");
                 decimal valor = decimal.Parse(Console.ReadLine());
                 contaConsultada.Depositar(valor);
                 conta.SaveChanges();
