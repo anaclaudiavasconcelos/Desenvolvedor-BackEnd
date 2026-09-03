@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 ContaContext contexto = new ContaContext();
 
-//contexto.Database.EnsureCreated();
+//contexto.Database.EnsureCreated(); propriedade para criar o banco de dados caso não exista, mas não é necessário pois já foi criado
 
 bool continuar = true;
 while (continuar)
@@ -88,7 +88,7 @@ void ConsultaConta(ContaContext conta)
     contaConsultada.ExibirDados(); //Read
 
     continuar = true;
-    while (continuar)
+    while (continuar) //atualizar dados.
     {
         Console.WriteLine(" -- Operações -- ");
         Console.WriteLine(" 1 - Depositar ");
@@ -114,14 +114,19 @@ void ConsultaConta(ContaContext conta)
                 valor = decimal.Parse(Console.ReadLine());
                 contaConsultada.Sacar(valor);
                 conta.SaveChanges();
-                 break;
+                contaConsultada.ExibirDados();
+                break;
              case 3:
                 //Operação alterar o titular da conta
+                Console.Write("Digite o novo titular da conta: ");
+                string novoTitular = Console.ReadLine();
+                contaConsultada.TitularDaConta = novoTitular;
+                conta.SaveChanges() ;
+                contaConsultada.ExibirDados();
                 break;
              case 4:
                 //Sair
-                continuar = false;
-                break;
+                return;
             default:
                 Console.WriteLine("Opção inválida");
                 break;
