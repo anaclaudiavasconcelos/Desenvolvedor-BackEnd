@@ -15,13 +15,13 @@ namespace ZAbstracao.Classes.Entidades
 
         
         //Propriedades
-        protected string Nome
+        public string Nome
         {
             get { return nome; }
             set { nome = value; }
         }
 
-        protected double RendaAnual
+        public double RendaAnual
         {
             get { return renda; }
             set { renda = value; }
