@@ -15,10 +15,13 @@ namespace VendasSenai.Classes.Contextos
             opcoesDeConstrucao.UseSqlServer(caminho);
         }
 
+        
+
         protected override void OnModelCreating(ModelBuilder modeloDeContrucao)
         {
             modeloDeContrucao.Entity<Vendas1>(entidades =>
             {
+                entidades.ToTable("VendasMarket");
                 entidades.HasKey(e => e.Id);
                 entidades.Property(e => e.DataCompra);
                 entidades.Property(e => e.Tipo);
@@ -26,7 +29,7 @@ namespace VendasSenai.Classes.Contextos
                 entidades.Property(e => e.Faturamento);
                 entidades.Property(e => e.Lucro);
             });
-
+                       
         }
     }
 }
