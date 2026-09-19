@@ -12,9 +12,9 @@ GO
 )
 UPDATE Estoque
 SET Foto = CASE EstoqueNumerado.Tipo
-	WHEN 1 THEN N'C:\Users\Back\Documents\DEVBACKEND\Banco de Dados\Aula06\Cars\Fotos\Carros\Carro'
+	WHEN 1 THEN N'C:\Users\Back\Documents\DEVBACKEND\Banco de Dados\Aula06\Cars\Cars\Fotos\Carros\Carro'
 		+ CONVERT(nvarchar(10), EstoqueNumerado.NumeroFoto) + N'.jpg'
-	WHEN 2 THEN N'C:\Users\Back\Documents\DEVBACKEND\Banco de Dados\Aula06\Cars\Fotos\Motos\Moto'
+	WHEN 2 THEN N'C:\Users\Back\Documents\DEVBACKEND\Banco de Dados\Aula06\Cars\Cars\Fotos\Motos\Moto'
 		+ CONVERT(nvarchar(10), EstoqueNumerado.NumeroFoto) + N'.jpg'
 END
 FROM dbo.Estoque AS Estoque

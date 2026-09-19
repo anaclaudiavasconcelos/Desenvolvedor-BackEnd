@@ -50,6 +50,7 @@
             button3 = new Button();
             checkBox1 = new CheckBox();
             checkBox2 = new CheckBox();
+            comboBox1 = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -64,6 +65,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(600, 50);
             textBox1.TabIndex = 0;
+            textBox1.KeyDown += textBox1_KeyDown;
             // 
             // label1
             // 
@@ -132,7 +134,7 @@
             panel1.Controls.Add(button3);
             panel1.Location = new Point(2, 1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(639, 449);
+            panel1.Size = new Size(630, 449);
             panel1.TabIndex = 7;
             // 
             // pictureBox1
@@ -141,6 +143,7 @@
             pictureBox1.Location = new Point(437, 55);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(181, 165);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 18;
             pictureBox1.TabStop = false;
             // 
@@ -214,7 +217,7 @@
             // textBox2
             // 
             textBox2.Enabled = false;
-            textBox2.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox2.Font = new Font("Segoe UI", 13.25F);
             textBox2.Location = new Point(191, 29);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
@@ -274,6 +277,7 @@
             button3.Text = "Fechar compra";
             button3.TextAlign = ContentAlignment.MiddleRight;
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // checkBox1
             // 
@@ -295,6 +299,15 @@
             checkBox2.Text = "Carro";
             checkBox2.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Inicia", "Contém" });
+            comboBox1.Location = new Point(706, 196);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(135, 23);
+            comboBox1.TabIndex = 11;
+            // 
             // Principal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -303,6 +316,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(908, 450);
+            Controls.Add(comboBox1);
             Controls.Add(checkBox2);
             Controls.Add(checkBox1);
             Controls.Add(panel1);
@@ -348,5 +362,6 @@
         private PictureBox pictureBox1;
         private CheckBox checkBox1;
         private CheckBox checkBox2;
+        private ComboBox comboBox1;
     }
 }
