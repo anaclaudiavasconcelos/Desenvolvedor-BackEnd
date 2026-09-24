@@ -17,6 +17,10 @@ namespace SistemaERP
             ContextoUsuario contexto = new ContextoUsuario();
             contexto.Database.EnsureCreated();
 
+            ContextoUltimoUsuario usuario = new ContextoUltimoUsuario();
+            usuario.Database.EnsureCreated();
+           
+
 
             if (TestarConexaoBanco())
             {
