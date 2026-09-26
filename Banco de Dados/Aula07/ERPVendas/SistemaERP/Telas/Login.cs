@@ -102,7 +102,31 @@ namespace SistemaERP
 
         private void Login_FormClosed(object sender, FormClosedEventArgs e)
         {
+            bool status = checkBox1.Checked;
+            ContextoUltimoUsuario ultimo = new ContextoUltimoUsuario();
+            var usuario = ultimo.ultimoUsuario.FirstOrDefault(i => i.Id == 1);
+            if (status)
+            {
+               
+                if (usuario != null)
+                {
+                    
+                    usuario.EsqueceuSenha = true;
+                    ultimo.SaveChanges();
+                }
+                else
+                {
+                    usuario.EsqueceuSenha = false;
+                    ultimo.SaveChanges();
+                }
 
+            }
+            else
+            {
+                usuario.EsqueceuSenha = false;
+                ultimo.SaveChanges();
+                checkBox1.Checked = false;
+            }
         }
     }
 }

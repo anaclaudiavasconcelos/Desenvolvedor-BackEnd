@@ -22,5 +22,9 @@ namespace SistemaERP.Classes.Entidades
             Regra = regra;
         }
 
+        protected Usuario(string nomeDoUsuario)
+        {
+            NomeDoUsuario = nomeDoUsuario;
+        }
     }
 }
