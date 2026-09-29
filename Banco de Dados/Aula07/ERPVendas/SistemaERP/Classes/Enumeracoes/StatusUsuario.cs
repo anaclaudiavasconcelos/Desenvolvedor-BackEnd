@@ -7,10 +7,10 @@ namespace SistemaERP.Classes.Enumeracoes
     internal enum StatusUsuario
     {
         [Description("Aguardando aprovação...")]
-        Aguardando,
+        Aguardando = 0,
         [Description("Usuário Aprovado...")]
-        Aprovado,
+        Aprovado = 1,
         [Description("Usuário Reprovado...")]
-        Reprovado
+        Reprovado = 2
     }
 }

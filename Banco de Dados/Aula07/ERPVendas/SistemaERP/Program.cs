@@ -29,7 +29,7 @@ namespace SistemaERP
             {
                 MessageBox.Show("Conexão realizada com sucesso!");
                 //Application.Run(new Login()); utilização futura
-                Application.Run(new Registrar());
+                Application.Run(new ERP());
 
 
             }

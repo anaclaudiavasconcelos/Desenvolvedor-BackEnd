@@ -28,19 +28,182 @@
         /// </summary>
         private void InitializeComponent()
         {
+            menuStrip1 = new MenuStrip();
+            toolStripMenuItem1 = new ToolStripMenuItem();
+            sairToolStripMenuItem = new ToolStripMenuItem();
+            toolStripSeparator1 = new ToolStripSeparator();
+            perfilToolStripMenuItem = new ToolStripMenuItem();
+            vendasToolStripMenuItem = new ToolStripMenuItem();
+            criarPedidoDeVendasToolStripMenuItem = new ToolStripMenuItem();
+            consultaDePedidoDeVendasToolStripMenuItem = new ToolStripMenuItem();
+            aprovaçãoDePedidoDeVendasToolStripMenuItem = new ToolStripMenuItem();
+            relatórioDeVendasToolStripMenuItem = new ToolStripMenuItem();
+            editarPedidoDeVendasToolStripMenuItem = new ToolStripMenuItem();
+            usuáriosToolStripMenuItem = new ToolStripMenuItem();
+            aprovaçãoDeUsuárioToolStripMenuItem = new ToolStripMenuItem();
+            editarUsuárioToolStripMenuItem = new ToolStripMenuItem();
+            consultarToolStripMenuItem = new ToolStripMenuItem();
+            criarUsuárioToolStripMenuItem = new ToolStripMenuItem();
+            excluirUsuárioToolStripMenuItem = new ToolStripMenuItem();
+            pictureBox1 = new PictureBox();
+            menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1, vendasToolStripMenuItem, usuáriosToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripMenuItem1
+            // 
+            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { sairToolStripMenuItem, toolStripSeparator1, perfilToolStripMenuItem });
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(60, 20);
+            toolStripMenuItem1.Text = "Sistema";
+            // 
+            // sairToolStripMenuItem
+            // 
+            sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            sairToolStripMenuItem.Size = new Size(180, 22);
+            sairToolStripMenuItem.Text = "Sair";
+            sairToolStripMenuItem.Click += sairToolStripMenuItem_Click;
+            // 
+            // toolStripSeparator1
+            // 
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(177, 6);
+            // 
+            // perfilToolStripMenuItem
+            // 
+            perfilToolStripMenuItem.Name = "perfilToolStripMenuItem";
+            perfilToolStripMenuItem.Size = new Size(180, 22);
+            perfilToolStripMenuItem.Text = "Perfil";
+            // 
+            // vendasToolStripMenuItem
+            // 
+            vendasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { criarPedidoDeVendasToolStripMenuItem, consultaDePedidoDeVendasToolStripMenuItem, aprovaçãoDePedidoDeVendasToolStripMenuItem, relatórioDeVendasToolStripMenuItem, editarPedidoDeVendasToolStripMenuItem });
+            vendasToolStripMenuItem.Name = "vendasToolStripMenuItem";
+            vendasToolStripMenuItem.Size = new Size(56, 20);
+            vendasToolStripMenuItem.Text = "Vendas";
+            // 
+            // criarPedidoDeVendasToolStripMenuItem
+            // 
+            criarPedidoDeVendasToolStripMenuItem.Name = "criarPedidoDeVendasToolStripMenuItem";
+            criarPedidoDeVendasToolStripMenuItem.Size = new Size(243, 22);
+            criarPedidoDeVendasToolStripMenuItem.Text = "Criar pedido de vendas";
+            // 
+            // consultaDePedidoDeVendasToolStripMenuItem
+            // 
+            consultaDePedidoDeVendasToolStripMenuItem.Name = "consultaDePedidoDeVendasToolStripMenuItem";
+            consultaDePedidoDeVendasToolStripMenuItem.Size = new Size(243, 22);
+            consultaDePedidoDeVendasToolStripMenuItem.Text = "Consulta de pedido de vendas";
+            // 
+            // aprovaçãoDePedidoDeVendasToolStripMenuItem
+            // 
+            aprovaçãoDePedidoDeVendasToolStripMenuItem.Name = "aprovaçãoDePedidoDeVendasToolStripMenuItem";
+            aprovaçãoDePedidoDeVendasToolStripMenuItem.Size = new Size(243, 22);
+            aprovaçãoDePedidoDeVendasToolStripMenuItem.Text = "Aprovação de pedido de vendas";
+            // 
+            // relatórioDeVendasToolStripMenuItem
+            // 
+            relatórioDeVendasToolStripMenuItem.Name = "relatórioDeVendasToolStripMenuItem";
+            relatórioDeVendasToolStripMenuItem.Size = new Size(243, 22);
+            relatórioDeVendasToolStripMenuItem.Text = "Relatório de vendas";
+            // 
+            // editarPedidoDeVendasToolStripMenuItem
+            // 
+            editarPedidoDeVendasToolStripMenuItem.Name = "editarPedidoDeVendasToolStripMenuItem";
+            editarPedidoDeVendasToolStripMenuItem.Size = new Size(243, 22);
+            editarPedidoDeVendasToolStripMenuItem.Text = "Editar pedido de vendas";
+            // 
+            // usuáriosToolStripMenuItem
+            // 
+            usuáriosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aprovaçãoDeUsuárioToolStripMenuItem, editarUsuárioToolStripMenuItem, consultarToolStripMenuItem, criarUsuárioToolStripMenuItem, excluirUsuárioToolStripMenuItem });
+            usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
+            usuáriosToolStripMenuItem.Size = new Size(64, 20);
+            usuáriosToolStripMenuItem.Text = "Usuários";
+            // 
+            // aprovaçãoDeUsuárioToolStripMenuItem
+            // 
+            aprovaçãoDeUsuárioToolStripMenuItem.Name = "aprovaçãoDeUsuárioToolStripMenuItem";
+            aprovaçãoDeUsuárioToolStripMenuItem.Size = new Size(189, 22);
+            aprovaçãoDeUsuárioToolStripMenuItem.Text = "Aprovação de usuário";
+            aprovaçãoDeUsuárioToolStripMenuItem.Click += aprovaçãoDeUsuárioToolStripMenuItem_Click;
+            // 
+            // editarUsuárioToolStripMenuItem
+            // 
+            editarUsuárioToolStripMenuItem.Name = "editarUsuárioToolStripMenuItem";
+            editarUsuárioToolStripMenuItem.Size = new Size(189, 22);
+            editarUsuárioToolStripMenuItem.Text = "Editar usuário";
+            // 
+            // consultarToolStripMenuItem
+            // 
+            consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
+            consultarToolStripMenuItem.Size = new Size(189, 22);
+            consultarToolStripMenuItem.Text = "Consulta usuário";
+            // 
+            // criarUsuárioToolStripMenuItem
+            // 
+            criarUsuárioToolStripMenuItem.Name = "criarUsuárioToolStripMenuItem";
+            criarUsuárioToolStripMenuItem.Size = new Size(189, 22);
+            criarUsuárioToolStripMenuItem.Text = "Criar usuário";
+            // 
+            // excluirUsuárioToolStripMenuItem
+            // 
+            excluirUsuárioToolStripMenuItem.Name = "excluirUsuárioToolStripMenuItem";
+            excluirUsuárioToolStripMenuItem.Size = new Size(189, 22);
+            excluirUsuárioToolStripMenuItem.Text = "Excluir usuário";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(108, 64);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(592, 293);
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
             // 
             // ERP
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
             Name = "ERP";
             Text = "ERP Vendas";
             FormClosed += ERP_FormClosed;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem toolStripMenuItem1;
+        private ToolStripMenuItem sairToolStripMenuItem;
+        private ToolStripSeparator toolStripSeparator1;
+        private ToolStripMenuItem perfilToolStripMenuItem;
+        private ToolStripMenuItem vendasToolStripMenuItem;
+        private ToolStripMenuItem criarPedidoDeVendasToolStripMenuItem;
+        private ToolStripMenuItem consultaDePedidoDeVendasToolStripMenuItem;
+        private ToolStripMenuItem aprovaçãoDePedidoDeVendasToolStripMenuItem;
+        private ToolStripMenuItem relatórioDeVendasToolStripMenuItem;
+        private ToolStripMenuItem editarPedidoDeVendasToolStripMenuItem;
+        private ToolStripMenuItem usuáriosToolStripMenuItem;
+        private ToolStripMenuItem aprovaçãoDeUsuárioToolStripMenuItem;
+        private ToolStripMenuItem editarUsuárioToolStripMenuItem;
+        private ToolStripMenuItem consultarToolStripMenuItem;
+        private ToolStripMenuItem criarUsuárioToolStripMenuItem;
+        private ToolStripMenuItem excluirUsuárioToolStripMenuItem;
+        private PictureBox pictureBox1;
     }
 }

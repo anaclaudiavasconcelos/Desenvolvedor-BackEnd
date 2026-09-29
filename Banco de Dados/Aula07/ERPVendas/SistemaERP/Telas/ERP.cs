@@ -17,5 +17,18 @@ namespace SistemaERP.Telas
             //Botão de Fechar
             TelaLogin.AbrirTela();
         }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+            TelaLogin.AbrirTela();
+        }
+
+        private void aprovaçãoDeUsuárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Aprovacao tela = new Aprovacao();
+            tela.Show();
+        }
     }
 }
