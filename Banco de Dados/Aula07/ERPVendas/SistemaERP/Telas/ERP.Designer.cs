@@ -46,6 +46,7 @@
             criarUsuárioToolStripMenuItem = new ToolStripMenuItem();
             excluirUsuárioToolStripMenuItem = new ToolStripMenuItem();
             pictureBox1 = new PictureBox();
+            reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -69,19 +70,19 @@
             // sairToolStripMenuItem
             // 
             sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            sairToolStripMenuItem.Size = new Size(180, 22);
+            sairToolStripMenuItem.Size = new Size(101, 22);
             sairToolStripMenuItem.Text = "Sair";
             sairToolStripMenuItem.Click += sairToolStripMenuItem_Click;
             // 
             // toolStripSeparator1
             // 
             toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(177, 6);
+            toolStripSeparator1.Size = new Size(98, 6);
             // 
             // perfilToolStripMenuItem
             // 
             perfilToolStripMenuItem.Name = "perfilToolStripMenuItem";
-            perfilToolStripMenuItem.Size = new Size(180, 22);
+            perfilToolStripMenuItem.Size = new Size(101, 22);
             perfilToolStripMenuItem.Text = "Perfil";
             // 
             // vendasToolStripMenuItem
@@ -114,6 +115,7 @@
             relatórioDeVendasToolStripMenuItem.Name = "relatórioDeVendasToolStripMenuItem";
             relatórioDeVendasToolStripMenuItem.Size = new Size(243, 22);
             relatórioDeVendasToolStripMenuItem.Text = "Relatório de vendas";
+            relatórioDeVendasToolStripMenuItem.Click += relatórioDeVendasToolStripMenuItem_Click;
             // 
             // editarPedidoDeVendasToolStripMenuItem
             // 
@@ -167,6 +169,14 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
+            // reportViewer1
+            // 
+            reportViewer1.Location = new Point(0, 0);
+            reportViewer1.Name = "ReportViewer";
+            reportViewer1.ServerReport.BearerToken = null;
+            reportViewer1.Size = new Size(396, 246);
+            reportViewer1.TabIndex = 0;
+            // 
             // ERP
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -176,6 +186,7 @@
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "ERP";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ERP Vendas";
             FormClosed += ERP_FormClosed;
             menuStrip1.ResumeLayout(false);
@@ -205,5 +216,6 @@
         private ToolStripMenuItem criarUsuárioToolStripMenuItem;
         private ToolStripMenuItem excluirUsuárioToolStripMenuItem;
         private PictureBox pictureBox1;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }
