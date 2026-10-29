@@ -17,7 +17,7 @@ namespace PlataformaJogosAPI.Models.Contextos
         //Métodos
         protected override void OnConfiguring(DbContextOptionsBuilder opcoesDeConstrucao)
         {
-            string caminho = "Server = ECFP507D1319371\\SQLEXPRESS03; Database = PlataformaJogos; Trusted_Connection = True; TrustServerCertificate = True;";
+            string caminho = Environment.GetEnvironmentVariable("db1");
             opcoesDeConstrucao.UseSqlServer(caminho);
         }
 
