@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "PlataformadeJogos": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "db1": "Server = ECFP507D1319371\\\\SQLEXPRESS03; Database = PlataformaJogos; Trusted_Connection = True; TrustServerCertificate = True;"
+      }
+    }
+  }
+}

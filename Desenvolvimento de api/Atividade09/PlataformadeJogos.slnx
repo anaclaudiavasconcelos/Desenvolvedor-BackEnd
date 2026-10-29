@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="PlataformadeJogos/PlataformadeJogos.csproj" />
+  <Project Path="PlataformaJogosAPI/PlataformaJogosAPI.csproj" Id="f279f24f-cdc4-4b90-80da-692d60e5fe53" />
+</Solution>

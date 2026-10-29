@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guia de implementação da API - SENAI Jogos</title>
+  <style>
+    :root { color-scheme: light; font-family: Segoe UI, Arial, sans-serif; }
+    body { margin: 0; background: #f3f5f9; color: #202638; }
+    header { padding: 32px max(24px, calc((100% - 1080px) / 2)); background: #202638; color: white; }
+    main { max-width: 1080px; margin: 24px auto; padding: 0 20px 40px; }
+    section, .notice { background: white; border: 1px solid #dce1eb; border-radius: 10px; padding: 20px; margin: 18px 0; }
+    h1, h2 { margin-top: 0; }
+    a { color: #0759b5; }
+    table { width: 100%; border-collapse: collapse; margin: 14px 0; }
+    th, td { padding: 10px; text-align: left; border-bottom: 1px solid #e5e8ef; vertical-align: top; }
+    th { background: #f5f7fb; }
+    code, pre { font-family: Consolas, monospace; }
+    code { background: #eef1f6; padding: 2px 5px; border-radius: 4px; }
+    pre { overflow-x: auto; background: #202638; color: #f5f7fb; padding: 14px; border-radius: 6px; }
+    .notice { border-left: 5px solid #d49b16; }
+    .small { color: #596273; font-size: .94rem; }
+    @media (max-width: 680px) { table { font-size: .88rem; } th, td { padding: 7px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Guia de implementação da API</h1>
+    <div>Loja de jogos online — material de apoio para o aluno desenvolvedor back-end</div>
+  </header>
+  <main>
+    <div class="notice">
+      <strong>Importante:</strong> o projeto contém o front-end Windows Forms e define os endereços que a API deverá atender. O aluno deve implementar essas rotas no projeto back-end e iniciar a API em <code>http://localhost:5212</code>, ou ajustar o endereço no front-end.
+      Os links para <code>localhost</code> abrem a rota no navegador (requisição GET). POST, PUT e DELETE são enviados pelos botões do Windows Forms; os links de código mostram onde essas chamadas são feitas.
+    </div>
+
+    <section>
+      <h2>Onde estão as chamadas HTTP no front-end?</h2>
+      <p>Os links abaixo abrem o arquivo <code>Form1.cs</code> no repositório GitHub, diretamente na região da chamada correspondente.</p>
+      <table>
+        <thead><tr><th>Operação</th><th>Local no código</th><th>O que a API precisa atender</th></tr></thead>
+        <tbody>
+          <tr><td>Explorar registros</td><td><a href="https://github.com/ElHopperCBR/PlataformadeJogos/blob/master/PlataformadeJogos/Form1.cs#L159">GET da coleção — linha 159</a></td><td><code>GET /api/{recurso}</code></td></tr>
+          <tr><td>Buscar para edição</td><td><a href="https://github.com/ElHopperCBR/PlataformadeJogos/blob/master/PlataformadeJogos/Form1.cs#L194">GET por ID — linha 194</a></td><td><code>GET /api/{recurso}/{id}</code></td></tr>
+          <tr><td>Cadastrar</td><td><a href="https://github.com/ElHopperCBR/PlataformadeJogos/blob/master/PlataformadeJogos/Form1.cs#L238">POST — linha 238</a></td><td><code>POST /api/{recurso}</code></td></tr>
+          <tr><td>Editar</td><td><a href="https://github.com/ElHopperCBR/PlataformadeJogos/blob/master/PlataformadeJogos/Form1.cs#L248">PUT — linha 248</a></td><td><code>PUT /api/{recurso}/{id}</code></td></tr>
+          <tr><td>Excluir</td><td><a href="https://github.com/ElHopperCBR/PlataformadeJogos/blob/master/PlataformadeJogos/Form1.cs#L281">DELETE — linha 281</a></td><td><code>DELETE /api/{recurso}/{id}</code></td></tr>
+        </tbody>
+      </table>
+      <p class="small">As rotas e os campos de cada entidade são configurados em <a href="https://github.com/ElHopperCBR/PlataformadeJogos/blob/master/PlataformadeJogos/Form1.cs#L559">jogos</a>, <a href="https://github.com/ElHopperCBR/PlataformadeJogos/blob/master/PlataformadeJogos/Form1.cs#L568">categorias</a>, <a href="https://github.com/ElHopperCBR/PlataformadeJogos/blob/master/PlataformadeJogos/Form1.cs#L574">estúdios</a> e <a href="https://github.com/ElHopperCBR/PlataformadeJogos/blob/master/PlataformadeJogos/Form1.cs#L580">usuários</a>.</p>
+    </section>
+
+    <section>
+      <h2>Rotas que o aluno deve implementar</h2>
+      <p>Todos os recursos usam as mesmas operações REST. Troque <code>{id}</code> por um ID existente para testar GET por ID ou DELETE.</p>
+      <table>
+        <thead><tr><th>Recurso</th><th>GET lista</th><th>GET por ID</th><th>POST</th><th>PUT</th><th>DELETE</th></tr></thead>
+        <tbody>
+          <tr><td>Jogos</td><td><a href="http://localhost:5212/api/jogos">/api/jogos</a></td><td><a href="http://localhost:5212/api/jogos/1">/api/jogos/1</a></td><td><code>/api/jogos</code></td><td><code>/api/jogos/{id}</code></td><td><code>/api/jogos/{id}</code></td></tr>
+          <tr><td>Categorias</td><td><a href="http://localhost:5212/api/categorias">/api/categorias</a></td><td><a href="http://localhost:5212/api/categorias/1">/api/categorias/1</a></td><td><code>/api/categorias</code></td><td><code>/api/categorias/{id}</code></td><td><code>/api/categorias/{id}</code></td></tr>
+          <tr><td>Estúdios</td><td><a href="http://localhost:5212/api/estudios">/api/estudios</a></td><td><a href="http://localhost:5212/api/estudios/1">/api/estudios/1</a></td><td><code>/api/estudios</code></td><td><code>/api/estudios/{id}</code></td><td><code>/api/estudios/{id}</code></td></tr>
+          <tr><td>Usuários</td><td><a href="http://localhost:5212/api/usuarios">/api/usuarios</a></td><td><a href="http://localhost:5212/api/usuarios/1">/api/usuarios/1</a></td><td><code>/api/usuarios</code></td><td><code>/api/usuarios/{id}</code></td><td><code>/api/usuarios/{id}</code></td></tr>
+        </tbody>
+      </table>
+      <p class="small">Os links locais funcionam quando a API estiver executando nessa porta. Um erro 404 indica que a rota ainda não foi criada ou que o caminho/porta da API é diferente.</p>
+    </section>
+
+    <section>
+      <h2>Campos esperados nos dados</h2>
+      <ul>
+        <li><strong>Jogo:</strong> <code>nome</code> (texto), <code>descricao</code> (texto opcional), <code>preco</code> (decimal), <code>categoriaId</code> (inteiro) e <code>estudioId</code> (inteiro).</li>
+        <li><strong>Categoria:</strong> <code>nome</code> (texto) e <code>descricao</code> (texto opcional).</li>
+        <li><strong>Estúdio:</strong> <code>nome</code> (texto) e <code>pais</code> (texto opcional).</li>
+        <li><strong>Usuário:</strong> <code>nome</code>, <code>email</code> e <code>senha</code>. A senha é enviada no cadastro e não deve ser retornada em respostas de consulta.</li>
+      </ul>
+      <p>Exemplo de corpo JSON para cadastrar um jogo:</p>
+      <pre>{
+  "nome": "Jogo de exemplo",
+  "descricao": "Descrição do jogo",
+  "preco": 79.90,
+  "categoriaId": 1,
+  "estudioId": 1
+}</pre>
+      <p>Para a tela Explorar, retorne uma lista JSON, por exemplo <code>[{ "id": 1, "nome": "Jogo de exemplo" }]</code>. Também é aceito um objeto com a lista dentro de <code>data</code>.</p>
+    </section>
+  </main>
+</body>
+</html>
