@@ -3,8 +3,8 @@ using PlataformaJogosAPI.Models.Contextos;
 var builder = WebApplication.CreateBuilder(args);
 
 //Conectar banco de dados
-ContextoJogo contextoJogo = new ContextoJogo();
-contextoJogo.Database.EnsureCreated();
+/*ContextoJogo contextoJogo = new ContextoJogo();
+contextoJogo.Database.EnsureCreated();*/
 
 
 // Add services to the container.

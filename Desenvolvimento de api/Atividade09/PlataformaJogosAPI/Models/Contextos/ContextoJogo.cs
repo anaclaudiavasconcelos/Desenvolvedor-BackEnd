@@ -9,10 +9,7 @@ namespace PlataformaJogosAPI.Models.Contextos
 
         //Propriedade
         public DbSet<Jogo> Jogos { get; set; }
-        public DbSet<Categoria> Categorias { get; set; }
-        public DbSet<Estudio> Estudios { get; set; }
-        public DbSet<Usuario> Usuarios { get; set; }
-
+        
 
         //Métodos
         protected override void OnConfiguring(DbContextOptionsBuilder opcoesDeConstrucao)

@@ -11,7 +11,7 @@ namespace PlataformadeJogos
         private readonly HttpClient http = new()
         {
             // Ajuste a URL e a porta para o endereço da API desenvolvida pelo aluno.
-            BaseAddress = new Uri("http://localhost:5212/")
+            BaseAddress = new Uri("http://localhost:5258")
         };
 
         private readonly Dictionary<string, TextBox> fieldInputs = new();

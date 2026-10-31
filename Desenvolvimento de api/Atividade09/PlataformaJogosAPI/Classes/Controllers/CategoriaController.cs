@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PlataformaJogosAPI.Repositorio;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,6 +9,9 @@ namespace PlataformaJogosAPI.Classes.Controllers
     [ApiController]
     public class CategoriaController : ControllerBase
     {
+        RepositorioCategoria rep = new RepositorioCategoria();
+
+
         // GET: api/<CategoriaController>
         [HttpGet]
         public IEnumerable<string> Get()
