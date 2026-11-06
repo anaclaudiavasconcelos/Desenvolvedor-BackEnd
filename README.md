@@ -29,7 +29,9 @@ Este repositório reúne exercícios e projetos práticos organizados por modulo
 
 ## 🦿Projetos por módulo🦿
 
-###Lógica de programação e algoritmo
+### 🧠Lógica de programação e algoritmo
+
+Módulo de estudos de algoritmos elaborados em CSharp com foco em lógica de programação, variáveis, constantes, operadores, coleções de dados, estruturas de controle de código, funções e bibliotecas.
 
 | Projeto | Status | Link |
 |---|---|---|
@@ -45,7 +47,7 @@ Este repositório reúne exercícios e projetos práticos organizados por modulo
 | Aula 10 | ✅ Concluido |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20e%20Algoritmos/Aula10/UltimaAula)|
 
 
-### Programação Orientada a Objetos
+### 🧱Programação Orientada a Objetos
 
 | Projeto | Status | Link |
 |---|---|---|
@@ -59,7 +61,7 @@ Este repositório reúne exercícios e projetos práticos organizados por modulo
 | Aula 08 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos/Aula08/Polimorfismo)|
 | Aula 09 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos/Aula09/SextaFeira)|
 
-### Desenvolvimento de Banco de Dados com a técnica ORM 
+### 🗒️Desenvolvimento de Banco de Dados com a técnica ORM 
 
 | Projeto | Status | Link |
 |---|---|---|
@@ -70,7 +72,7 @@ Este repositório reúne exercícios e projetos práticos organizados por modulo
 | Aula 06 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Banco%20de%20Dados/Aula06/Cars)|
 | Aula 07 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Banco%20de%20Dados/Aula07/ERPVendas)|
 
-### Desenvolvimento de API REST
+### 🔌Desenvolvimento de API REST
 
 | Projeto | Status | Link |
 |---|---|---|
