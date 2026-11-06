@@ -52,6 +52,13 @@ Módulo de estudos de algoritmos elaborados em CSharp com foco em lógica de pro
 
 ### 🧱Programação Orientada a Objetos
 
+Módulo com foco em estudo dos conceitos da programação orientada a objetos, um dos diversos paradigmas de programação, com definição dos pilares:
+- encapsulamento;
+- herança;
+- polimorfismo;
+- abstração
+  Além dos estudos das classes estáticas, enumerações, interfaces e relação de objetos.
+
 | Projeto | Status | Link |
 |---|---|---|
 | Aula 01 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos/Aula01/POO)|
