@@ -26,7 +26,9 @@ Este repositório reúne exercícios e projetos práticos organizados por modulo
 -**SQL**
 
 ## 🦿Projetos por módulo🦿
+
 ###Lógica de programação e algoritmo
+
 | Projeto | Status | Link |
 |---|---|---|
 | Aula 01 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20e%20Algoritmos/Aula01/SaidaDeDados)|
@@ -39,6 +41,22 @@ Este repositório reúne exercícios e projetos práticos organizados por modulo
 | Aula 08 | ✅ Concluido |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20e%20Algoritmos/Aula08/Quarta)|
 | Aula 09 | ✅ Concluido |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20e%20Algoritmos/Aula09)|
 | Aula 10 | ✅ Concluido |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20e%20Algoritmos/Aula10/UltimaAula)|
+
+### Programação Orientada a Objetos
+
+| Projeto | Status | Link |
+|---|---|---|
+| Aula 01 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos/Aula01/POO)|
+| Aula 02 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos/Aula02/Construtores)|
+| Aula 03 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos/Aula03/Sexta)|
+| Aula 04 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos/Aula04/Encapsulamento)|
+| Aula 05 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos/Aula05/Quarta)|
+| Aula 06 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos/Aula06/Heran%C3%A7a)|
+| Aula 07 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos/Aula07/Segunda)|
+| Aula 08 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos/Aula08/Polimorfismo)|
+| Aula 09 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos/Aula09/SextaFeira)|
+
+
 
 
 
