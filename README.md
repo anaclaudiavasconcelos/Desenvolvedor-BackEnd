@@ -30,7 +30,7 @@ Este repositório reúne exercícios e projetos práticos organizados por modulo
 -**SQL**
 
 
-## 🦿Projetos por módulo🦿
+## 📚Projetos por módulo 📚
 
 ### 🧠Lógica de programação e algoritmo
 
