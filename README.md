@@ -72,7 +72,16 @@ Módulo com foco em estudo dos conceitos da programação orientada a objetos, u
 | Aula 08 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos/Aula08/Polimorfismo)|
 | Aula 09 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos/Aula09/SextaFeira)|
 
-### 🗒️Desenvolvimento de Banco de Dados com a técnica ORM 
+### 🗒️ Banco de Dados
+
+Módulo com foco no desenvolvimento de aplicações que utilizam banco de dados com a técnica ORM realizando as operações CRUD:
+
+-CREATE -> Criar
+-READ -> Ler
+-UPDATE -> Atualizar
+-DELETE -> Deletar
+
+Com elaboração de algumas consultas (querys) SQL mas os projetos em sua maioria foram desenvolvidos com ORM -> Objeto Relacional Mapeado.
 
 | Projeto | Status | Link |
 |---|---|---|
@@ -84,6 +93,8 @@ Módulo com foco em estudo dos conceitos da programação orientada a objetos, u
 | Aula 07 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Banco%20de%20Dados/Aula07/ERPVendas)|
 
 ### 🔌Desenvolvimento de API REST
+
+Módulo para desenvolvimento de API REST com operações CRUD utilizando protocolo HTTP com suporte ao aplicativo Postman para testes da API, além da elaboração de documentação da API através do SWAGGER. Na última foi desenvolvido uma API co operações CRUD, incompleta, com foco em geração de TOKENS através do JWT(JSON Web Token). 
 
 | Projeto | Status | Link |
 |---|---|---|
