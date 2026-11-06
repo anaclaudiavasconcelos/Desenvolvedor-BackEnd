@@ -23,7 +23,9 @@ Este repositório reúne exercícios e projetos práticos organizados por modulo
 ## ⌨️ Tecnologias utilizadas ⌨️
 
 -**CSharp** (principal)
+
 -**SQL**
+
 
 ## 🦿Projetos por módulo🦿
 
@@ -42,6 +44,7 @@ Este repositório reúne exercícios e projetos práticos organizados por modulo
 | Aula 09 | ✅ Concluido |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20e%20Algoritmos/Aula09)|
 | Aula 10 | ✅ Concluido |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20e%20Algoritmos/Aula10/UltimaAula)|
 
+
 ### Programação Orientada a Objetos
 
 | Projeto | Status | Link |
@@ -56,6 +59,22 @@ Este repositório reúne exercícios e projetos práticos organizados por modulo
 | Aula 08 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos/Aula08/Polimorfismo)|
 | Aula 09 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos/Aula09/SextaFeira)|
 
+### Desenvolvimento de Banco de Dados com a técnica ORM 
+
+| Projeto | Status | Link |
+|---|---|---|
+| Aula 01 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Banco%20de%20Dados/Aula01/SegundaFeira)|
+| Aula 02 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Banco%20de%20Dados/Aula02)|
+| Aula 04 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Banco%20de%20Dados/Aula04/QuartaFeira)|
+| Aula 05 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Banco%20de%20Dados/Aula05/Segunda)|
+| Aula 06 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Banco%20de%20Dados/Aula06/Cars)|
+| Aula 07 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Banco%20de%20Dados/Aula07/ERPVendas)|
+
+### Desenvolvimento de API's
+
+| Projeto | Status | Link |
+|---|---|---|
+| Aula 01 | ✅ Concluído |.[Abrir] (
 
 
 
