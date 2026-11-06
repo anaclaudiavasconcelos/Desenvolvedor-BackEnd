@@ -4,9 +4,12 @@ Repósitório com as atividades desenvolvidas no curso do **SENAI de Americana**
 ##🎯 Objetivo do curso 🎯
 O curso de Qualificação Profissional de Desenvolvedor Back-End tem por objetivo o desenvolvimento de competências que permitem projetar, desenvolver e manter sistemas e aplicativos
 na parte do servidor e seguindo boas práticas, procedimentos e normas.
+
 ##😎 Autor 😎
 **anaclaudiavasconcelos**
+
 GitHub:[@anaclaudiavasconcelos](https://github.com/anaclaudiavasconcelos).
+
 linkendin:[]
 
 ## Carga horária do curso -> 160 horas
