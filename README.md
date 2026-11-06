@@ -70,11 +70,14 @@ Este repositório reúne exercícios e projetos práticos organizados por modulo
 | Aula 06 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Banco%20de%20Dados/Aula06/Cars)|
 | Aula 07 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Banco%20de%20Dados/Aula07/ERPVendas)|
 
-### Desenvolvimento de API's
+### Desenvolvimento de API REST
 
 | Projeto | Status | Link |
 |---|---|---|
-| Aula 01 | ✅ Concluído |.[Abrir] (
+| Aula 01 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Desenvolvimento%20de%20api/Aula01/APIPessoas)|
+| Aula 02 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Desenvolvimento%20de%20api/Aula02/Banco)|
+| Aula 03 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Desenvolvimento%20de%20api/Aula03/CasasBahia)|
+| Aula 04 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/Desenvolvimento%20de%20api/Aula04/UltimaAula)|
 
 
 
