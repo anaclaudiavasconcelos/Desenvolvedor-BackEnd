@@ -25,8 +25,8 @@ Este repositório reúne exercícios e projetos práticos organizados por modulo
 -**SQL**
 
 ## 🦿Projetos por módulo🦿
-###Lógica 
-
+###Lógica de programação e algoritmo
+| Projeto | Status | Link |
 |---|---|---|
 | Aula 01 | ✅ Concluído |.[Abrir] (https://github.com/anaclaudiavasconcelos/Desenvolvedor-BackEnd/tree/master/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20e%20Algoritmos/Aula01/SaidaDeDados) |
 
